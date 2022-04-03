@@ -11,10 +11,10 @@ const About = () => {
     >
       <h1 className="text-2xl bg-blue-100 drop-shadow">About Me</h1>
       <p>
-        <p
+        <span
           style={{
-                      lineHeight: 1.1,
-              fontStyle: "italic",
+            lineHeight: 1.1,
+            fontStyle: "italic",
           }}
         >
           I have been facinated by technology for as long as I can remember. I
@@ -22,7 +22,7 @@ const About = () => {
           roms and root apps) and hacking windows' core apps just to change how
           it looks or add some new features. <strong> problem solving </strong>
           and logic games were ( and still are ) my favorite past time.
-        </p>
+        </span>
         <br />
         Right after I learned about web development<strong> I knew </strong>it
         was the right career for me and I started learning how to code in march
