@@ -104,30 +104,31 @@ const logos = [
 
 const Skills = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center w-full h-screen p-8"
-      id="skills"
-    >
-      <h1 className="text-xl font-[300] bg-blue-300 p-1 m-2">
-        Some of my Skills
-      </h1>
+      <div
+        className="flex flex-col items-center justify-center w-full h-screen p-8"
+        id="skills"
+      >
+        <h1 className="text-xl font-[300] bg-blue-300 p-1 m-2">
+          Some of my Skills
+        </h1>
 
-      <div className="grid items-center justify-center grid-cols-5 gap-8 p-8 rounded-lg shadow-lg">
-        {logos.map(({ name, logo }, i) => (
-          <div
-            className="relative group animate-bounce"
-            style={{
-              animationDuration: `${i + 1 * 1}s`,
-            }}
-          >
-            <p className="absolute p-4 text-xs text-center transition-all -translate-x-1/2 translate-y-1/2 bg-white border shadow opacity-0 left-1/2 top-1/2 group-hover:opacity-100 group-hover:translate-y-[60%] z-50 font-semibold">
-              {name}
-            </p>
-            <img src={logo} alt={name} className="w-full" />
-          </div>
-        ))}
+        <div className="grid items-center justify-center grid-cols-5 gap-8 p-8 rounded-lg shadow-lg">
+          {logos.map(({ name, logo }, i) => (
+            <div
+              className="relative group animate-bounce"
+              style={{
+                animationDuration: `${i + 1 * 1}s`,
+              }}
+              key={`${i}-${name}`}
+            >
+              <p className="absolute p-4 text-xs text-center transition-all -translate-x-1/2 translate-y-1/2 bg-white border shadow opacity-0 left-1/2 top-1/2 group-hover:opacity-100 group-hover:translate-y-[60%] z-50 font-semibold">
+                {name}
+              </p>
+              <img src={logo} alt={name} className="w-full" />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
   );
 };
 
