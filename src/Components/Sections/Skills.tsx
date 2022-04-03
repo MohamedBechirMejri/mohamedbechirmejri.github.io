@@ -23,8 +23,25 @@ const Skills = () => {
   return (
     <div>
       <h1>Skills</h1>
-
-      {css3}
+      <img src={css3} alt="" />
+      <img src={eslint} alt="" />
+      <img src={git} alt="" />
+      <img src={github} alt="" />
+      <img src={heroku} alt="" />
+      <img src={html5} alt="" />
+      <img src={javascript} alt="" />
+      <img src={jest} alt="" />
+      <img src={mongodb} alt="" />
+      <img src={nodejs} alt="" />
+      <img src={npm} alt="" />
+      <img src={rails} alt="" />
+      <img src={react} alt="" />
+      <img src={ruby} alt="" />
+      <img src={sass} alt="" />
+      <img src={tailwind} alt="" />
+      <img src={typescript} alt="" />
+      <img src={webpack} alt="" />
+      <img src={yarn} alt="" />
     </div>
   );
 };
