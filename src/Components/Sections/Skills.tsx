@@ -19,29 +19,97 @@ import typescript from "../../Assets/Logos/typescript.svg";
 import webpack from "../../Assets/Logos/webpack.svg";
 import yarn from "../../Assets/Logos/yarn.svg";
 
+const logos = [
+  {
+    name: "CSS3",
+    logo: css3,
+  },
+  {
+    name: "ESLint",
+    logo: eslint,
+  },
+  {
+    name: "Git",
+    logo: git,
+  },
+  {
+    name: "GitHub",
+    logo: github,
+  },
+  {
+    name: "Heroku",
+    logo: heroku,
+  },
+  {
+    name: "HTML5",
+    logo: html5,
+  },
+  {
+    name: "JavaScript",
+    logo: javascript,
+  },
+  {
+    name: "Jest",
+    logo: jest,
+  },
+  {
+    name: "MongoDB",
+    logo: mongodb,
+  },
+  {
+    name: "Node.js",
+    logo: nodejs,
+  },
+  {
+    name: "npm",
+    logo: npm,
+  },
+  {
+    name: "Rails",
+    logo: rails,
+  },
+  {
+    name: "React",
+    logo: react,
+  },
+  {
+    name: "Ruby",
+    logo: ruby,
+  },
+  {
+    name: "Sass",
+    logo: sass,
+  },
+  {
+    name: "Tailwind",
+    logo: tailwind,
+  },
+  {
+    name: "TypeScript",
+    logo: typescript,
+  },
+  {
+    name: "Webpack",
+    logo: webpack,
+  },
+  {
+    name: "Yarn",
+    logo: yarn,
+  },
+];
+
 const Skills = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center w-full h-screen p-4">
       <h1>Skills</h1>
-      <img src={css3} alt="" />
-      <img src={eslint} alt="" />
-      <img src={git} alt="" />
-      <img src={github} alt="" />
-      <img src={heroku} alt="" />
-      <img src={html5} alt="" />
-      <img src={javascript} alt="" />
-      <img src={jest} alt="" />
-      <img src={mongodb} alt="" />
-      <img src={nodejs} alt="" />
-      <img src={npm} alt="" />
-      <img src={rails} alt="" />
-      <img src={react} alt="" />
-      <img src={ruby} alt="" />
-      <img src={sass} alt="" />
-      <img src={tailwind} alt="" />
-      <img src={typescript} alt="" />
-      <img src={webpack} alt="" />
-      <img src={yarn} alt="" />
+
+      <div className="grid items-center justify-center grid-cols-5 gap-8 p-8 rounded-lg shadow-lg">
+        {logos.map((logo, i) => (
+          <div className={`flex justify-center after:content-['${logo.name}']`}>
+            <img src={logo.logo} alt={logo.name} className="w-full" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
