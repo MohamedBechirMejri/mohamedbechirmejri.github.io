@@ -4,11 +4,13 @@ import Hero from "./Components/Sections/Hero";
 import Skills from "./Components/Sections/Skills";
 
 function App() {
-  return <div className="App">
-    <Hero />
-    <About />
-    <Skills/>
-  </div>;
+  return (
+    <div className="App">
+      <Hero />
+      <About />
+      <Skills />
+    </div>
+  );
 }
 
 export default App;
