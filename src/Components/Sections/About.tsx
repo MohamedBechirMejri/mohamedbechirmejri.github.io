@@ -8,6 +8,7 @@ const About = () => {
         fontSize: "clamp(1rem, 3vw, 1.3rem)",
         fontWeight: 300,
       }}
+      id="about"
     >
       <h1 className="text-2xl bg-blue-100 drop-shadow">About Me</h1>
       <p>

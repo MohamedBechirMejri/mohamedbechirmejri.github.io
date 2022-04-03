@@ -8,6 +8,7 @@ const Hero = () => {
       style={{
         fontSize: "clamp(1rem, 7vw, 5rem)",
       }}
+      id="hero"
     >
       <div className="flex flex-col justify-center items-left">
         <p className="text-sm"> Hey, </p>

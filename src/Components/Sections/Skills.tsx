@@ -104,8 +104,13 @@ const logos = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen p-8">
-      <h1 className="text-xl font-[300] bg-blue-300 p-1 m-2">Some of my Skills</h1>
+    <div
+      className="flex flex-col items-center justify-center w-full h-screen p-8"
+      id="skills"
+    >
+      <h1 className="text-xl font-[300] bg-blue-300 p-1 m-2">
+        Some of my Skills
+      </h1>
 
       <div className="grid items-center justify-center grid-cols-5 gap-8 p-8 rounded-lg shadow-lg">
         {logos.map(({ name, logo }, i) => (
