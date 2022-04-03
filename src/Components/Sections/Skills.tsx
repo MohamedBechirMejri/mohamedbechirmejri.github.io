@@ -21,8 +21,45 @@ import yarn from "../../Assets/Logos/yarn.svg";
 
 const logos = [
   {
+    name: "HTML5",
+    logo: html5,
+  },
+  {
     name: "CSS3",
     logo: css3,
+  },
+
+  {
+    name: "JavaScript",
+    logo: javascript,
+  },
+  {
+    name: "TypeScript",
+    logo: typescript,
+  },
+  {
+    name: "Ruby",
+    logo: ruby,
+  },
+  {
+    name: "Sass",
+    logo: sass,
+  },
+  {
+    name: "Tailwind",
+    logo: tailwind,
+  },
+  {
+    name: "Node.js",
+    logo: nodejs,
+  },
+  {
+    name: "React",
+    logo: react,
+  },
+  {
+    name: "Rails",
+    logo: rails,
   },
   {
     name: "ESLint",
@@ -40,14 +77,7 @@ const logos = [
     name: "Heroku",
     logo: heroku,
   },
-  {
-    name: "HTML5",
-    logo: html5,
-  },
-  {
-    name: "JavaScript",
-    logo: javascript,
-  },
+
   {
     name: "Jest",
     logo: jest,
@@ -56,38 +86,12 @@ const logos = [
     name: "MongoDB",
     logo: mongodb,
   },
-  {
-    name: "Node.js",
-    logo: nodejs,
-  },
+
   {
     name: "npm",
     logo: npm,
   },
-  {
-    name: "Rails",
-    logo: rails,
-  },
-  {
-    name: "React",
-    logo: react,
-  },
-  {
-    name: "Ruby",
-    logo: ruby,
-  },
-  {
-    name: "Sass",
-    logo: sass,
-  },
-  {
-    name: "Tailwind",
-    logo: tailwind,
-  },
-  {
-    name: "TypeScript",
-    logo: typescript,
-  },
+
   {
     name: "Webpack",
     logo: webpack,
@@ -100,13 +104,21 @@ const logos = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen p-4">
-      <h1>Skills</h1>
+    <div className="flex flex-col items-center justify-center w-full h-screen p-8">
+      <h1 className="text-xl font-[300] bg-blue-300 p-1 m-2">Some of my Skills</h1>
 
       <div className="grid items-center justify-center grid-cols-5 gap-8 p-8 rounded-lg shadow-lg">
-        {logos.map((logo, i) => (
-          <div className={`flex justify-center after:content-['${logo.name}']`}>
-            <img src={logo.logo} alt={logo.name} className="w-full" />
+        {logos.map(({ name, logo }, i) => (
+          <div
+            className="relative group animate-bounce"
+            style={{
+              animationDuration: `${i + 1 * 1}s`,
+            }}
+          >
+            <p className="absolute p-4 text-xs text-center transition-all -translate-x-1/2 translate-y-1/2 bg-white border shadow opacity-0 left-1/2 top-1/2 group-hover:opacity-100 group-hover:translate-y-[60%] z-50 font-semibold">
+              {name}
+            </p>
+            <img src={logo} alt={name} className="w-full" />
           </div>
         ))}
       </div>
