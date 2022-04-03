@@ -16,7 +16,15 @@ const Hero = () => {
         <p>A full-stack developer</p>
         <p>based in Tunisia ❤️</p>
       </div>
-      <p className=" animate-[bounce_1.5s_linear_infinite]">
+      <p
+        className=" animate-[bounce_1.5s_linear_infinite] cursor-pointer"
+        onClick={() => {
+          window.scrollTo({
+            top: document.getElementById("about")!.offsetTop,
+            behavior: "smooth",
+          });
+        }}
+      >
         <CgChevronDown className="text-3xl" />
       </p>
     </div>
