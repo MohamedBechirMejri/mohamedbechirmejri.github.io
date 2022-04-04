@@ -7,14 +7,14 @@ import SmoothScroll from "./Components/SmoothScroll/SmoothScroll.jsx";
 
 function App() {
   return (
-    <SmoothScroll>
-      <div className="App">
-        <Header />
-        <Hero />
+    <div className="App">
+      <Header />
+      <SmoothScroll>
+        <Hero /> 
         <About />
         <Skills />
-      </div>{" "}
-    </SmoothScroll>
+      </SmoothScroll>
+    </div>
   );
 }
 
