@@ -7,7 +7,7 @@ const Projects = () => {
       description: "A simple todo list app",
       link: "https://todo-list-app-mohamed-bechir.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/700/700",
+      image: "https://picsum.photos/1700/1500",
       technologies: [
         "React",
         "Node.js",
@@ -26,7 +26,7 @@ const Projects = () => {
       description: "A simple tic tac toe game",
       link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/700/700",
+      image: "https://picsum.photos/1700/1500",
       technologies: [
         "React",
         "Node.js",
@@ -45,7 +45,7 @@ const Projects = () => {
       description: "A simple weather app",
       link: "https://weather-app-mohamed-bechir.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/700/700",
+      image: "https://picsum.photos/1700/1500",
       technologies: [
         "React",
         "Node.js",
@@ -64,7 +64,7 @@ const Projects = () => {
       description: "A simple tic tac toe game",
       link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/700/600",
+      image: "https://picsum.photos/1700/1500",
       technologies: [
         "React",
         "Node.js",
@@ -90,7 +90,7 @@ const Projects = () => {
               key={index}
               className="pb-4 overflow-hidden transition-all rounded   hover:bg-[#fafafa]"
             >
-              <img src={project.image} alt="project" />
+              <img src={project.image} alt="project" className="w-full" />
               <h2 className="p-6 text-xl font-medium">{project.name}</h2>
               <p className="mx-4 bg-[#eee] w-full p-4">
                 <code> {project.description}</code>
