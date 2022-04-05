@@ -36,6 +36,17 @@ const Nav = () => {
       >
         Projects
       </p>
+      <p
+        className="p-4 cursor-pointer hover:underline"
+        onClick={() => {
+          window.scrollTo({
+            top: document.getElementById("contact")!.offsetTop,
+            behavior: "smooth",
+          });
+        }}
+      >
+        Contact
+      </p>
     </nav>
   );
 };
