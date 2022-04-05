@@ -10,7 +10,7 @@ const Projects = () => {
     {
       name: "Blog App",
       description: "A simple Blog App to familiarize myself with Rails.",
-      link: "https://todo-list-app-mohamed-bechir.herokuapp.com/",
+      link: "https://evening-refuge-13847.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri/blog-rails",
       image: blog,
       technologies: ["Ruby on Rails", "Tailwind CSS"],
@@ -19,7 +19,7 @@ const Projects = () => {
       name: "Etch-A-Sketch",
       description:
         "Replicating the original Etch-A-Sketch Toy. I'm proud of this one.",
-      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
+      link: "https://mohamedbechirmejri.github.io/ETCH-A-SKETCH/",
       sourceCode: "https://github.com/MohamedBechirMejri/ETCH-A-SKETCH",
       image: etch,
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -27,7 +27,7 @@ const Projects = () => {
     {
       name: "Library App",
       description: "A Library App to familiarize myself with the backend.",
-      link: "https://weather-app-mohamed-bechir.herokuapp.com/",
+      link: "https://library-top-a7458.web.app/",
       sourceCode: "https://github.com/MohamedBechirMejri/LIBRARY",
       image: library,
       technologies: ["ReactJS", "Firebase"],
@@ -36,7 +36,7 @@ const Projects = () => {
       name: "Unlimited Wordle",
       description:
         "My first TS project, Wordle Clone with unlimited rounds per day. made in the Style of Motus because dad loves that show. ",
-      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
+      link: "https://mohamedbechirmejri.github.io/unlimited-wordle",
       sourceCode: "https://github.com/MohamedBechirMejri/unlimited-wordle",
       image: motus,
       technologies: ["TypeScript", "ReactJS", "Tailwind CSS"],
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       name: "Photo Tagging Game",
       description: "Character finding game with global realtime leaderboard. ",
-      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
+      link: "https://photo-tagging-game-6d738.web.app/",
       sourceCode:
         "https://github.com/MohamedBechirMejri/where-s-waldo-a-photo-tagging-app",
       image: waldo,
