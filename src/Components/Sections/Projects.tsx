@@ -82,7 +82,9 @@ const Projects = () => {
 
   return (
     <div className="w-full min-h-screen p-8 pt-16" id="projects">
-      <h1 className="p-8 text-lg font-[300]">And Some of My Projects</h1>
+      <h1 className="w-full text-[clamp(3rem,1vw,4rem)] text-center font-[400] p-12 before:content-[''] before:bg-red-500 before:opacity-70 before:w-2/5 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ">
+        some Projects:
+      </h1>
       <div className="flex flex-col items-center justify-center gap-8">
         {projects.map((project, index) => {
           return (

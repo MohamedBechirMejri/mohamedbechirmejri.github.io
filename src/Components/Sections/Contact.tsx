@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="p-8 bg-[#afafaf] h-screen w-full flex flex-col items-center justify-center">
       <h1
-        className="w-full text-[clamp(3rem,6vw,4rem)] text-center font-[400] p-4 before:content-[''] before:bg-green-600 before:opacity-70 before:w-1/3 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 "
+        className="w-full text-[clamp(3rem,6vw,4rem)] text-center font-[400] p-4 before:content-[''] before:bg-fuchsia-600 before:opacity-70 before:w-1/3 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 "
         style={{
           transformStyle: "preserve-3d",
         }}

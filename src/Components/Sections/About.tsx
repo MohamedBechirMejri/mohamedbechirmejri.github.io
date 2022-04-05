@@ -10,7 +10,9 @@ const About = () => {
       }}
       id="about"
     >
-      <h1 className="text-2xl bg-blue-100 drop-shadow">About Me</h1>
+      <h1 className="w-full text-[clamp(3rem,1vw,4rem)] text-center font-[400] p-12 before:content-[''] before:bg-green-500 before:opacity-70 before:w-2/5 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ">
+        About Me
+      </h1>
       <p>
         <span
           style={{
