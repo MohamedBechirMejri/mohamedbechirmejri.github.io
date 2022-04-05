@@ -73,7 +73,7 @@ const Projects = () => {
                 className="w-full rounded-lg"
               />
               <h2 className="p-6 text-xl font-medium">{project.name}</h2>
-              <p className="mx-4 bg-[#eee] w-full p-4">
+              <p className="bg-[#eee] w-full p-4">
                 <code> {project.description}</code>
               </p>
               <p className="flex flex-wrap gap-2 p-4">
@@ -91,7 +91,7 @@ const Projects = () => {
                   );
                 })}
               </p>
-              <div className="flex flex-row justify-center w-full gap-2">
+              <div className="flex flex-row justify-center w-full gap-2 p-2">
                 <a
                   href={project.link}
                   target="_blank"
