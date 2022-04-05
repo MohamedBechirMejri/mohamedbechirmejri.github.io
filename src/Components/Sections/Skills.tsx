@@ -108,7 +108,7 @@ const Skills = () => {
       className="flex flex-col items-center justify-center w-full min-h-screen p-8"
       id="skills"
     >
-      <h1 className="w-full text-[clamp(3rem,1vw,4rem)] text-center font-[400] p-12 before:content-[''] before:bg-yellow-500 before:opacity-70 before:w-2/5 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ">
+      <h1 className="w-full text-[clamp(2rem,2vw,4rem)] text-center font-[400] p-12 before:content-[''] before:bg-yellow-500 before:opacity-70 before:w-2/5 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ">
         Some of my Skills
       </h1>
 
