@@ -25,6 +25,17 @@ const Nav = () => {
       >
         Skills
       </p>
+      <p
+        className="p-4 cursor-pointer hover:underline"
+        onClick={() => {
+          window.scrollTo({
+            top: document.getElementById("projects")!.offsetTop,
+            behavior: "smooth",
+          });
+        }}
+      >
+        Projects
+      </p>
     </nav>
   );
 };
