@@ -1,82 +1,54 @@
 import React from "react";
+import blog from "../../Assets/Gifs/blog.gif";
+import etch from "../../Assets/Gifs/etch.gif";
+import library from "../../Assets/Gifs/library.gif";
+import motus from "../../Assets/Gifs/motus.gif";
+import waldo from "../../Assets/Gifs/waldo.gif";
 
 const Projects = () => {
   const projects = [
     {
-      name: "Todo List",
-      description: "A simple todo list app",
+      name: "Blog App",
+      description: "A simple Blog App to familiarize myself with Rails.",
       link: "https://todo-list-app-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/1700/1500",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Passport",
-        "Jest",
-        "Enzyme",
-        "React Testing Library",
-      ],
+      sourceCode: "https://github.com/MohamedBechirMejri/blog-rails",
+      image: blog,
+      technologies: ["Ruby on Rails", "Tailwind CSS"],
     },
     {
-      name: "Tic Tac Toe",
-      description: "A simple tic tac toe game",
+      name: "Etch-A-Sketch",
+      description:
+        "Replicating the original Etch-A-Sketch Toy. I'm proud of this one.",
       link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/1700/1500",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Passport",
-        "Jest",
-        "Enzyme",
-        "React Testing Library",
-      ],
+      sourceCode: "https://github.com/MohamedBechirMejri/ETCH-A-SKETCH",
+      image: etch,
+      technologies: ["HTML", "CSS", "JavaScript"],
     },
     {
-      name: "Weather App",
-      description: "A simple weather app",
+      name: "Library App",
+      description: "A Library App to familiarize myself with the backend.",
       link: "https://weather-app-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/1700/1500",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Passport",
-        "Jest",
-        "Enzyme",
-        "React Testing Library",
-      ],
+      sourceCode: "https://github.com/MohamedBechirMejri/LIBRARY",
+      image: library,
+      technologies: ["ReactJS", "Firebase"],
     },
     {
-      name: "Tic Tac Toe",
-      description: "A simple tic tac toe game",
+      name: "Unlimited Wordle",
+      description:
+        "My first TS project, Wordle Clone with unlimited rounds per day. made in the Style of Motus because dad loves that show. ",
       link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: "https://picsum.photos/1700/1500",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Passport",
-        "Jest",
-        "Enzyme",
-        "React Testing Library",
-      ],
+      sourceCode: "https://github.com/MohamedBechirMejri/unlimited-wordle",
+      image: motus,
+      technologies: ["TypeScript", "ReactJS", "Tailwind CSS"],
+    },
+    {
+      name: "Photo Tagging Game",
+      description: "Character finding game with global realtime leaderboard. ",
+      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
+      sourceCode:
+        "https://github.com/MohamedBechirMejri/where-s-waldo-a-photo-tagging-app",
+      image: waldo,
+      technologies: ["ReactJS", "Firebase", "Tailwind CSS"],
     },
   ];
 
@@ -88,7 +60,7 @@ const Projects = () => {
       <h1 className="w-full text-[clamp(2rem,2vw,4rem)] text-center font-[400] p-12 before:content-[''] before:bg-red-500 before:opacity-70 before:w-2/5 before:h-8 before:absolute before:left-1/2 before:-z-10 before:-rotate-[2deg] relative before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2">
         Some of my Projects:
       </h1>
-      <div className="flex flex-col items-center justify-center gap-8 max-w-[50rem] ">
+      <div className="flex flex-col items-center justify-center gap-8 max-w-[35rem] ">
         {projects.map((project, index) => {
           return (
             <div
@@ -141,6 +113,14 @@ const Projects = () => {
           );
         })}
       </div>
+      <a
+        href="https://github.com/MohamedBechirMejri/"
+        target="_blank"
+        rel="noreferrer"
+        className="p-4 m-8 text-center text-white transition-all rounded bg-zinc-700 hover:bg-zinc-600"
+      >
+        40+ More...
+      </a>
     </div>
   );
 };
