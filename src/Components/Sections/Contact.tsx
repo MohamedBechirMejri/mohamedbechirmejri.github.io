@@ -3,7 +3,12 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="p-8 bg-[#afafaf] h-screen w-full flex flex-col items-center justify-center">
-      <h1 className="w-full text-[clamp(3rem,6vw,4rem)] text-center font-[400] p-4">
+      <h1
+        className="w-full text-[clamp(3rem,6vw,4rem)] text-center font-[400] p-4 before:content-[''] before:bg-yellow-300 before:absolute before:-inset-1 before:-skew-y-3 relative"
+        style={{
+          transformStyle: "preserve-3d",
+        }}
+      >
         Get in touch
       </h1>
       <p className=" text-lg font-[300] text-center max-w-3xl p-4">
@@ -12,11 +17,15 @@ const Contact = () => {
         email and I will get back to you!
       </p>{" "}
       <a
-        href="mailto:mohamedbechir.mejri.dev@gmail.com
+        href="mailto:mohamedbechirmejri.dev@gmail.com
             "
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-4 m-4 transition-all rounded text-zinc-200 bg-zinc-800 hover:shadow-[0_0_0_8px] hover:bg-zinc-300 hover:text-zinc-800 font-bold shadow-[0_0_0_5px] active:shadow-[0_0_0_4px] "
+        // className="px-8 py-4 m-4 transition-all rounded text-zinc-200 bg-zinc-800 hover:shadow-[0_0_0_8px] hover:bg-zinc-300 hover:text-zinc-800 font-bold shadow-[0_0_0_5px] active:shadow-[0_0_0_4px] "
+        className="px-8 py-4 m-4 transition-all rounded text-zinc-300 bg-zinc-800 hover:bg-zinc-300 hover:text-zinc-800 font-bold active:shadow-[0_0_0_4px] relative overflow-hidden before:w-full before:h-full before:absolute before:top-0 before:transition-all before:-z-10 before:-left-full hover:before:left-0 before:bg-zinc-300 border-2 border-zinc-800"
+        style={{
+          transformStyle: "preserve-3d",
+        }}
       >
         Say hello!
       </a>
