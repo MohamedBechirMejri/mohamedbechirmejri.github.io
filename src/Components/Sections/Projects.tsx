@@ -81,7 +81,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full h-screen p-8 pt-16" id="projects">
+    <div className="w-full min-h-screen p-8 pt-16" id="projects">
       <h1 className="p-8 text-lg font-[300]">And Some of My Projects</h1>
       <div className="flex flex-col items-center justify-center gap-8">
         {projects.map((project, index) => {
