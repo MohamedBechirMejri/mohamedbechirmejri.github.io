@@ -3,8 +3,8 @@
 ✔ Welcome Screen @started(22-04-01 15:10) @done(22-04-01 21:41) @lasted(6h31m42s)
 ✔ About Me ( where from, what I do, etc ) @done(22-04-01 21:41)
 ✔ Skills @started(22-04-01 21:41) @done(22-04-04 23:18) @lasted(3d1h37m38s)
-☐ Projects @started(22-04-04 23:18)
-☐ Contact
+✔ Projects @started(22-04-04 23:18) @done(22-04-06 00:36) @lasted(1d1h18m53s)
+✔ Contact @done(22-04-06 00:36)
 ☐ Footer (Social Media, etc)
 ## Additions
 ☐ Custom Cursor
@@ -13,47 +13,3 @@
 ☐ Sounds
 ☐ Animated text
 ☐ Loading screen at the start
-import React from "react";
-import blog from "../../Assets/Gifs/blog.gif";
-import etch from "../../Assets/Gifs/etch.gif";
-import library from "../../Assets/Gifs/library.gif";
-import motus from "../../Assets/Gifs/motus.gif";
-import waldo from "../../Assets/Gifs/waldo.gif";
-
-const Projects = () => {
-  const projects = [
-    {
-      name: "Blog App",
-      description: "A simple Blog App to familiarize myself with Rails.",
-      link: "https://todo-list-app-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: blog,
-      technologies: ["Ruby on Rails", "Tailwind CSS"],
-    },
-    {
-      name: "Etch-A-Sketch",
-      description:
-        "Replicating the original Etch-A-Sketch Toy. I'm proud of this one.",
-      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: etch,
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      name: "Library App",
-      description: "A Library App to familiarize myself with the backend.",
-      link: "https://weather-app-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: library,
-      technologies: ["ReactJS", "Firebase"],
-    },
-    {
-      name: "Unlimited Wordle",
-      description:
-        "My first TS project, Wordle Clone with unlimited rounds per day. made in the Style of Motus because dad loves that show. ",
-      link: "https://tic-tac-toe-mohamed-bechir.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri",
-      image: motus,
-      technologies: ["TypeScript", "ReactJS", "Tailwind CSS"],
-    },
-  ];
