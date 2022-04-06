@@ -47,7 +47,7 @@ const SocialLinks = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-transform duration-200 ease-in-out hover:-translate-y-1"
+            className="transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:scale-[1.5]"
           >
             {link.icon}
           </a>
@@ -60,7 +60,7 @@ const SocialLinks = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-transform duration-200 ease-in-out hover:-translate-y-1"
+            className="transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:scale-[1.5]"
           >
             {link.icon}
           </a>

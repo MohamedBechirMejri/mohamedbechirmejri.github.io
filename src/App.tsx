@@ -25,8 +25,8 @@ function App() {
           scale: 0.09,
           opacity: 0.47,
         }}
-        targetOpacity={0.8}
-        targetScale={2}
+        targetOpacity={0.5}
+        targetScale={1.65}
       />
       <CustomCursor
         targets={[".link", "a", ".cursor-pointer"]}
