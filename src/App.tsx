@@ -16,7 +16,7 @@ function App() {
       <CustomCursor
         targets={[".link", "a", ".cursor-pointer"]}
         customClass="custom-cursor"
-        dimensions={35}
+        dimensions={37}
         fill="#F5F5F5"
         strokeColor="#000"
         strokeWidth={1}
@@ -31,8 +31,8 @@ function App() {
       <CustomCursor
         targets={[".link", "a", ".cursor-pointer"]}
         customClass="custom-cursor"
-        dimensions={5}
-        fill="#F5F5F5"
+        dimensions={7}
+        fill="#000"
         strokeColor="#000"
         strokeWidth={1}
         smoothness={{
