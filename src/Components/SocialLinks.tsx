@@ -40,7 +40,7 @@ const SocialLinks = () => {
 
   return (
     <div>
-      <div className="fixed flex flex-col gap-2 text-xl bottom-0 left-3 text-zinc-600 after:content-[''] after:w-[1px] after:h-16 after:bg-zinc-600 items-center after:mt-6 ">
+      <div className="fixed flex flex-col gap-2 text-xl bottom-0 left-3 text-zinc-600 after:content-[''] after:w-[1px] after:h-16 after:bg-zinc-600 items-center after:mt-6 scale-0 sm:scale-100 transition-all">
         {proLinks.map(link => (
           <a
             key={link.url}
@@ -53,7 +53,7 @@ const SocialLinks = () => {
           </a>
         ))}
       </div>
-      <div className="fixed flex flex-col gap-2 text-xl bottom-0 right-3 text-zinc-600 after:content-[''] after:w-[1px] after:h-16 after:bg-zinc-600 items-center after:mt-6 ">
+      <div className="fixed flex flex-col gap-2 text-xl bottom-0 right-3 text-zinc-600 after:content-[''] after:w-[1px] after:h-16 after:bg-zinc-600 items-center after:mt-6  scale-0 sm:scale-100 transition-all">
         {casualLinks.map(link => (
           <a
             key={link.url}
