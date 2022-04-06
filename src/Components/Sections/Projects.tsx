@@ -1,9 +1,15 @@
 import React from "react";
-import blog from "../../Assets/Gifs/blog.gif";
-import etch from "../../Assets/Gifs/etch.gif";
-import library from "../../Assets/Gifs/library.gif";
-import motus from "../../Assets/Gifs/motus.gif";
-import waldo from "../../Assets/Gifs/waldo.gif";
+// @ts-ignore
+import blog from "../../Assets/Videos/Previews/blog.webm";
+// @ts-ignore
+import etch from "../../Assets/Videos/Previews/etch.webm";
+// @ts-ignore
+import library from "../../Assets/Videos/Previews/library.webm";
+// @ts-ignore
+import motus from "../../Assets/Videos/Previews/motus.webm";
+// @ts-ignore
+import waldo from "../../Assets/Videos/Previews/waldo.webm";
+// @ts-ignore
 
 const Projects = () => {
   const projects = [
@@ -12,7 +18,7 @@ const Projects = () => {
       description: "A simple Blog App to familiarize myself with Rails.",
       link: "https://evening-refuge-13847.herokuapp.com/",
       sourceCode: "https://github.com/MohamedBechirMejri/blog-rails",
-      image: blog,
+      preview: blog,
       technologies: ["Ruby on Rails", "Tailwind CSS"],
     },
     {
@@ -21,7 +27,7 @@ const Projects = () => {
         "Replicating the original Etch-A-Sketch Toy. I'm proud of this one.",
       link: "https://mohamedbechirmejri.github.io/ETCH-A-SKETCH/",
       sourceCode: "https://github.com/MohamedBechirMejri/ETCH-A-SKETCH",
-      image: etch,
+      preview: etch,
       technologies: ["HTML", "CSS", "JavaScript"],
     },
     {
@@ -29,7 +35,7 @@ const Projects = () => {
       description: "A Library App to familiarize myself with the backend.",
       link: "https://library-top-a7458.web.app/",
       sourceCode: "https://github.com/MohamedBechirMejri/LIBRARY",
-      image: library,
+      preview: library,
       technologies: ["ReactJS", "Firebase"],
     },
     {
@@ -38,7 +44,7 @@ const Projects = () => {
         "My first TS project, Wordle Clone with unlimited rounds per day. made in the Style of Motus because dad loves that show. ",
       link: "https://mohamedbechirmejri.github.io/unlimited-wordle",
       sourceCode: "https://github.com/MohamedBechirMejri/unlimited-wordle",
-      image: motus,
+      preview: motus,
       technologies: ["TypeScript", "ReactJS", "Tailwind CSS"],
     },
     {
@@ -47,7 +53,7 @@ const Projects = () => {
       link: "https://photo-tagging-game-6d738.web.app/",
       sourceCode:
         "https://github.com/MohamedBechirMejri/where-s-waldo-a-photo-tagging-app",
-      image: waldo,
+      preview: waldo,
       technologies: ["ReactJS", "Firebase", "Tailwind CSS"],
     },
   ];
@@ -67,10 +73,12 @@ const Projects = () => {
               key={index}
               className="pb-4 overflow-hidden transition-all rounded "
             >
-              <img
-                src={project.image}
-                alt="project"
+              <video
+                src={project.preview}
                 className="w-full rounded-lg"
+                autoPlay
+                loop
+                muted
               />
               <h2 className="p-6 text-xl font-medium">{project.name}</h2>
               <p className="bg-[#eee] w-full p-4">
