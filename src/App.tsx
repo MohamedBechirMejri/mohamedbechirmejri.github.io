@@ -14,16 +14,34 @@ function App() {
   return (
     <div className="App">
       <CustomCursor
-        targets={[".link", ".your-css-selector"]}
+        targets={[".link", "a", ".cursor-pointer"]}
         customClass="custom-cursor"
-        dimensions={30}
-        fill="#FFF"
+        dimensions={35}
+        fill="#F5F5F5"
+        strokeColor="#000"
+        strokeWidth={1}
         smoothness={{
-          movement: 0.2,
-          scale: 0.1,
-          opacity: 0.2,
+          movement: 0.13,
+          scale: 0.09,
+          opacity: 0.47,
         }}
-        targetOpacity={0.5}
+        targetOpacity={0.8}
+        targetScale={2}
+      />
+      <CustomCursor
+        targets={[".link", "a", ".cursor-pointer"]}
+        customClass="custom-cursor"
+        dimensions={5}
+        fill="#F5F5F5"
+        strokeColor="#000"
+        strokeWidth={1}
+        smoothness={{
+          movement: 1,
+          scale: 0.09,
+          opacity: 0.47,
+        }}
+        targetOpacity={0.8}
+        targetScale={2}
       />
       <Header />
       <SocialLinks />
