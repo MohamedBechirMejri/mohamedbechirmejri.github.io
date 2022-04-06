@@ -12,29 +12,29 @@ const SocialLinks = () => {
   const casualLinks = [
     {
       icon: <IoLogoFacebook />,
-      url: "https://www.facebook.com/julian.gonzalez.9",
+      url: "https://www.facebook.com/MohamedBechirMejri",
     },
     {
       icon: <IoLogoTwitter />,
-      url: "https://twitter.com/julian_gonzalez",
+      url: "https://twitter.com/MohamedBechirMe",
     },
-    {
-      icon: <SiDiscord />,
-      url: "https://discord.gg/jGzXxX",
-    },
-    {
-      icon: <IoLogoWhatsapp />,
-      url: "https://wa.me/56988888888",
-    },
+    // {
+    //   icon: <SiDiscord />,
+    //   url: "https://discord.gg/hhhhhhh",
+    // },
+    // {
+    //   icon: <IoLogoWhatsapp />,
+    //   url: "https://wa.me/hhhhhhh,
+    // },
   ];
   const proLinks = [
     {
       icon: <IoLogoGithub />,
-      url: "",
+      url: "https://github.com/MohamedBechirMejri/",
     },
     {
       icon: <IoLogoLinkedin />,
-      url: "https://www.linkedin.com/in/julian-gonzalez-9b9b4a1a/",
+      url: "https://www.linkedin.com/in/mohamed-bechir-mejri-b03b3720a/",
     },
   ];
 
