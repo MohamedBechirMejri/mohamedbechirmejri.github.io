@@ -18,6 +18,7 @@ import tailwind from "../../Assets/Logos/tailwind.svg";
 import typescript from "../../Assets/Logos/typescript.svg";
 import webpack from "../../Assets/Logos/webpack.svg";
 import yarn from "../../Assets/Logos/yarn.svg";
+import firebase from "../../Assets/Logos/firebase.svg";
 
 const logos = [
   {
@@ -99,6 +100,10 @@ const logos = [
   {
     name: "Yarn",
     logo: yarn,
+  },
+  {
+    name: "Firebase",
+    logo: firebase,
   },
 ];
 
