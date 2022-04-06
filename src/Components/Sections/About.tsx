@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-screen gap-12 px-12 py-24 text-lg text-[161616] "
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-12 px-12 py-24 text-lg text-[161616] "
       style={{
         fontSize: "clamp(1rem, 3vw, 1.3rem)",
         fontWeight: 300,
