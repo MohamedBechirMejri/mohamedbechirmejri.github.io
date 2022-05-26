@@ -84,3 +84,22 @@ code {
 *::-webkit-scrollbar {
   display: none;
 }
+
+.rotate-animation {
+  animation: rotate 3s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    border-radius: 0.5em;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(720deg);
+    border-radius: 50%;
+  }
+}

@@ -9,10 +9,12 @@ import SocialLinks from "./Components/SocialLinks";
 // @ts-ignore
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
+import Preloader from "./Components/Preloader";
 
 function App() {
   return (
     <div className="App">
+      <Preloader />
       <CustomCursor
         targets={[".link", "a", ".cursor-pointer"]}
         customClass="custom-cursor"
