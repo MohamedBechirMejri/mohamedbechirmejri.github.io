@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav className="flex items-center text-[0.75rem] sm:text-[1rem]">
       <p
-        className="p-2 transition-all cursor-pointer sm:p-4 hover:underline"
+        className="p-2 transition-all cursor-pointer sm:pt-4 animated-underline "
         onClick={() => {
           window.scrollTo({
             top: document.getElementById("about")!.offsetTop,
@@ -15,7 +15,7 @@ const Nav = () => {
         About
       </p>
       <p
-        className="p-2 transition-all cursor-pointer sm:p-4 hover:underline"
+        className="p-2 transition-all cursor-pointer sm:pt-4 animated-underline "
         onClick={() => {
           window.scrollTo({
             top: document.getElementById("skills")!.offsetTop,
@@ -26,7 +26,7 @@ const Nav = () => {
         Skills
       </p>
       <p
-        className="p-2 transition-all cursor-pointer sm:p-4 hover:underline"
+        className="p-2 transition-all cursor-pointer sm:pt-4 animated-underline "
         onClick={() => {
           window.scrollTo({
             top: document.getElementById("projects")!.offsetTop,
@@ -37,7 +37,7 @@ const Nav = () => {
         Projects
       </p>
       <p
-        className="p-2 transition-all cursor-pointer sm:p-4 hover:underline"
+        className="p-2 transition-all cursor-pointer sm:pt-4 animated-underline "
         onClick={() => {
           window.scrollTo({
             top: document.getElementById("contact")!.offsetTop,
