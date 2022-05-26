@@ -103,3 +103,21 @@ code {
     border-radius: 50%;
   }
 }
+
+.onload-scale {
+  animation: scale 1s ease-in-out forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  99% {
+    transform: translate(-50%, -50%) scale(75);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
