@@ -81,3 +81,6 @@ code {
   height: 0;
   display: none;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
