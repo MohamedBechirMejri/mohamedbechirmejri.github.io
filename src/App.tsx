@@ -14,7 +14,7 @@ import Preloader from "./Components/Preloader";
 function App() {
   return (
     <div className="App">
-      <Preloader />
+      {/* <Preloader /> */}
       <CustomCursor
         targets={[".link", "a", ".cursor-pointer"]}
         customClass="custom-cursor"
