@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.1cc2c362.css",
-    "main.js": "./static/js/main.9c668a51.js",
+    "main.css": "./static/css/main.f5b2d848.css",
+    "main.js": "./static/js/main.e55dd0db.js",
     "static/media/waldo.webm": "./static/media/waldo.115a0c9d6ade67a82697.webm",
     "static/media/library.webm": "./static/media/library.007c34a0655f33fac8ab.webm",
     "static/media/motus.webm": "./static/media/motus.9fb4ae2b973d799067a0.webm",
-    "static/media/blog.webm": "./static/media/blog.b60c1fed37098bf29e76.webm",
     "static/media/etch.webm": "./static/media/etch.b7745b53b489b8ae3006.webm",
     "index.html": "./index.html",
     "static/media/mongodb.svg": "./static/media/mongodb.e5cd5ebc9afcf7af411c659f8e15cfd5.svg",
@@ -28,11 +27,11 @@
     "static/media/npm.svg": "./static/media/npm.66c5be604ae9b26ddc7d3825517ac317.svg",
     "static/media/firebase.svg": "./static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
     "static/media/tailwind.svg": "./static/media/tailwind.d22b29a2028c438a02033f41d11e899b.svg",
-    "main.1cc2c362.css.map": "./static/css/main.1cc2c362.css.map",
-    "main.9c668a51.js.map": "./static/js/main.9c668a51.js.map"
+    "main.f5b2d848.css.map": "./static/css/main.f5b2d848.css.map",
+    "main.e55dd0db.js.map": "./static/js/main.e55dd0db.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cc2c362.css",
-    "static/js/main.9c668a51.js"
+    "static/css/main.f5b2d848.css",
+    "static/js/main.e55dd0db.js"
   ]
 }
