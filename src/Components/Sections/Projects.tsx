@@ -1,6 +1,3 @@
-import React from "react";
-// @ts-ignore
-import blog from "../../Assets/Videos/Previews/blog.webm";
 // @ts-ignore
 import etch from "../../Assets/Videos/Previews/etch.webm";
 // @ts-ignore
@@ -14,12 +11,29 @@ import waldo from "../../Assets/Videos/Previews/waldo.webm";
 const Projects = () => {
   const projects = [
     {
-      name: "Blog App",
-      description: "A simple Blog App to familiarize myself with Rails.",
-      link: "https://evening-refuge-13847.herokuapp.com/",
-      sourceCode: "https://github.com/MohamedBechirMejri/blog-rails",
-      preview: blog,
-      technologies: ["Ruby on Rails", "Tailwind CSS"],
+      name: "nyutab",
+      description: "A Better NewTab page for Chrome/FireFox (WIP)",
+      link: null,
+      sourceCode: "https://github.com/MohamedBechirMejri/nyutab",
+      previewImg:
+        "https://github.com/MohamedBechirMejri/nyutab/raw/main/.github/Assets/screenshot-2v0.8.png",
+      technologies: ["ReactJS", "Tailwind CSS"],
+    },
+    {
+      name: "Facebook Clone",
+      description: "TheOdinProject's Capstone project",
+      link: "https://odinbook-next.vercel.app/",
+      sourceCode: "https://github.com/MohamedBechirMejri/facebook-next",
+      previewImg: "/odinbook-next.vercel.app_ (1).png",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "Firebase",
+        "MongoDB",
+        "TypeScript",
+        "Websocket",
+        "More...",
+      ],
     },
     {
       name: "Etch-A-Sketch",
@@ -73,13 +87,17 @@ const Projects = () => {
               key={index}
               className="pb-4 overflow-hidden transition-all rounded "
             >
-              <video
-                src={project.preview}
-                className="w-full rounded-lg"
-                autoPlay
-                loop
-                muted
-              />
+              {project.previewImg ? (
+                <img src={project.previewImg} alt="" />
+              ) : (
+                <video
+                  src={project.preview}
+                  className="w-full rounded-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+              )}
               <h2 className="p-6 text-xl font-medium">{project.name}</h2>
               <p className="bg-[#eee] w-full p-4">
                 <code> {project.description}</code>
@@ -100,14 +118,16 @@ const Projects = () => {
                 })}
               </p>
               <div className="flex flex-row justify-center w-full gap-2 p-2">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 font-bold text-white transition-all rounded bg-zinc-700 hover:bg-zinc-600"
-                >
-                  Live
-                </a>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 font-bold text-white transition-all rounded bg-zinc-700 hover:bg-zinc-600"
+                  >
+                    Live
+                  </a>
+                )}
                 <a
                   href={project.sourceCode}
                   target="_blank"
@@ -127,7 +147,7 @@ const Projects = () => {
         rel="noreferrer"
         className="p-4 m-8 text-center text-white transition-all rounded bg-zinc-700 hover:bg-zinc-600"
       >
-        40+ More...
+        70+ More...
       </a>
     </div>
   );
